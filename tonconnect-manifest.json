@@ -1,0 +1,13 @@
+{
+  "name": "AB Coin",
+  "icon": "https://cache.tonapi.io/imgproxy/iNMnoEReCDR47JfMedDWbTI9SN0M-9qd_tigLlDiMS0/rs:fill:200:200:1/g:no/aHR0cHM6Ly9pbWcuY29sbGVjdGlmeS5hcHAvamV0dG9uX3NwbC90b3oyeDlkbmZIYUc3c3pFamh5WlJzcWZVSkREUlVwZlhoVllxNEdRLnBuZw.webp",
+  "url": "localhost",
+  "theme": {
+    "light": "#FFFFFF",
+    "dark": "#000000"
+  },
+  "version": "1.0.0",
+  "supported_wallets": [
+    "ton_wallet"
+  ]
+}
