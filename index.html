@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AB Coin | Whitepaper & Roadmap</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(90deg, #1e40af, #3b82f6);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 0;
+      opacity: 0.8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #1e293b;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #3b82f6;
+      margin-top: 0;
+      animation: slideIn 1s ease-out;
+    }
+
+    .roadmap {
+      margin: 30px 0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .roadmap::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #3b82f6;
+      transform: translateX(-50%);
+      animation: pulse 2s infinite;
+    }
+
+    .roadmap-item {
+      position: relative;
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #3b82f6;
+      border-radius: 8px;
+      background: #0f172a;
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+      color: #e2e8f0;
+      max-width: 400px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .roadmap-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.6);
+    }
+
+    .roadmap-item::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #3b82f6;
+      border: 2px solid #0f172a;
+    }
+
+    .roadmap-item:nth-child(odd)::before {
+      left: -10px;
+    }
+
+    .roadmap-item:nth-child(even)::before {
+      right: -10px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .cta button {
+      padding: 12px 25px;
+      background-color: #3b82f6;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta button:hover {
+      background-color: #1e40af;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e40af;
+      color: #fff;
+    }
+
+    footer a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateX(-20px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes scaleIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.6; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .cta button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+
+      .roadmap-item {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AB Coin Whitepaper & Roadmap</h1>
+    <p>Innovating the future of cryptocurrency with AB Coin.</p>
+  </header>
+
+  <main>
+    <h2>AB Coin Overview</h2>
+    <div class="whitepaper">
+      <p><strong>Token Name:</strong> AB Coin</p>
+      <p><strong>Token Type:</strong> Jetton</p>
+      <p><strong>Total Supply:</strong> 1,000,000,000,000,000 AB</p>
+      <p><strong>Token Address:</strong> EQB3c17HWUjVr7ueKYW8_isGzyfLnQT3Umg2JYdW-6tBWq6t</p>
+      <p><strong>Coin Image:</strong></p>
+      <img class="coin-image" src="https://cache.tonapi.io/imgproxy/iNMnoEReCDR47JfMedDWbTI9SN0M-9qd_tigLlDiMS0/rs:fill:200:200:1/g:no/aHR0cHM6Ly9pbWcuY29sbGVjdGlmeS5hcHAvamV0dG9uX3NwbC90b3oyeDlkbmZIYUc3c3pFamh5WlJzcWZVSkREUlVwZlhoVllxNEdRLnBuZw.webp" alt="AB Coin Image">
+      <p><strong>Mutable:</strong> No</p>
+      <p><strong>Link to TON Swap:</strong> <a href="https://tonscan.org/jetton/EQB3c17HWUjVr7ueKYW8_isGzyfLnQT3Umg2JYdW-6tBWq6t#holders" target="_blank">TONSwap - View AB Coin</a></p>
+    </div>
+
+    <h2>Roadmap</h2>
+    <ul class="roadmap">
+      <li class="roadmap-item">
+        <strong>Q1 2025:</strong> Launch of the AB Coin token and community development.
+      </li>
+      <li class="roadmap-item">
+        <strong>Q2 2025:</strong> Introduction of AB Coin trading on exchanges.
+      </li>
+      <li class="roadmap-item">
+        <strong>Q3 2025:</strong> Integration with decentralized finance platforms.
+      </li>
+      <li class="roadmap-item">
+        <strong>Q4 2025:</strong> Expansion to global markets and strategic partnerships.
+      </li>
+    </ul>
+
+    <div class="cta">
+      <p>Join us in building a strong AB Coin community!</p>
+      <button onclick="window.location.href='https://t.me/ABcoinairdrop';">Join Our Community</button>
+      <button onclick="window.location.href='https://t.me/Abcoinairdropbot';">Earn Free Coin</button>
+    </div>
+
+    <!-- Firebase Viewer Counter -->
+    <div id="viewer-count" style="text-align:center; margin-top:40px;">
+      <p>Current Viewer Count: <span id="viewerNumber">Loading...</span></p>
+    </div>
+
+    <!-- Like System -->
+    <div id="like-system" style="text-align:center; margin-top:30px;">
+      <p>Do you like AB Coin?</p>
+      <button id="like-button">Like</button>
+      <p>Likes: <span id="like-count">0</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 AB Coin. <a href="#">Learn More</a></p>
+  </footer>
+
+  <!-- Firebase Script and Real-time Counter -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getDatabase, ref, onValue, set, update } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBQMke0SOMIq0rod6vOm4jrFJ4cExfJPNE",
+      authDomain: "ab-studio-4c309.firebaseapp.com",
+      databaseURL: "https://ab-studio-4c309-default-rtdb.firebaseio.com",
+      projectId: "ab-studio-4c309",
+      storageBucket: "ab-studio-4c309.firebasestorage.app",
+      messagingSenderId: "290321392308",
+      appId: "1:290321392308:web:eed8f4bda17a51944eade1"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const viewerRef = ref(db, 'viewerCount');
+    const likeRef = ref(db, 'likeCount');
+
+    onValue(viewerRef, (snapshot) => {
+      const data = snapshot.val();
+      document.getElementById('viewerNumber').textContent = data || 0;
+    });
+
+    onValue(likeRef, (snapshot) => {
+      const data = snapshot.val();
+      document.getElementById('like-count').textContent = data || 0;
+    });
+
+    // Increase viewer count when page loads
+    function increaseViewerCount() {
+      const viewerCountRef = ref(db, 'viewerCount');
+      onValue(viewerCountRef, (snapshot) => {
+        let currentCount = snapshot.val() || 0;
+        set(viewerCountRef, currentCount + 1);
+      });
+    }
+
+    increaseViewerCount();
+
+    // Like button functionality
+    document.getElementById('like-button').addEventListener('click', function() {
+      const likeCountRef = ref(db, 'likeCount');
+      onValue(likeCountRef, (snapshot) => {
+        let currentLikes = snapshot.val() || 0;
+        update(likeCountRef, { likeCount: currentLikes + 1 });
+      });
+    });
+  </script>
+</body>
+</html>
